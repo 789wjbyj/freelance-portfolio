@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jade — 简约好物独立站（Shopify 风格演示）</title>
+<meta name="description" content="Jade 演示站：Shopify 风格独立站首页与商品页 mockup，用于作品集展示。" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== 顶部公告 ===== -->
+<div class="announce">🚚 全场满 $49 免运费 · 新客首单 9 折</div>
+
+<!-- ===== 导航 ===== -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <button class="nav__toggle" id="navToggle" aria-label="菜单">☰</button>
+    <a href="index.html" class="logo">JADE</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html#featured">新品</a>
+      <a href="index.html#collection">分类</a>
+      <a href="product.html">热卖</a>
+    </nav>
+    <div class="nav__right">
+      <button class="icon-btn" aria-label="搜索">🔍</button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="购物车">🛒<span class="cart-count" id="cartCount">2</span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">秋季新品 · 简约生活</span>
+      <h1>把日常的<br>每一件，<span class="hl">都选好</span></h1>
+      <p class="lead">家居、数码配件、随身好物——干净的版式，顺手的购物体验。</p>
+      <a href="#featured" class="btn btn--primary">逛逛新品</a>
+    </div>
+    <div class="hero__visual">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="product-card-float">
+        <div class="pf__img">🎧</div>
+        <div class="pf__name">Aura 无线耳机</div>
+        <div class="pf__price">$59.00</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 精选商品 ===== -->
+<section class="section" id="featured">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">本周精选</span>
+      <h2>大家都在看</h2>
+    </div>
+    <div class="grid grid--4" id="productGrid">
+      <a class="product" href="product.html">
+        <div class="product__img" style="background:linear-gradient(135deg,#ffd9a0,#ff9a76)">⌚</div>
+        <div class="product__body">
+          <h3>Pulse 智能手环</h3>
+          <div class="product__meta"><span class="price">$39.00</span><span class="stars">★ 4.8</span></div>
+        </div>
+      </a>
+      <a class="product" href="product.html">
+        <div class="product__img" style="background:linear-gradient(135deg,#b8e0ff,#7aa8ff)">🎧</div>
+        <div class="product__body">
+          <h3>Aura 无线耳机</h3>
+          <div class="product__meta"><span class="price">$59.00</span><span class="stars">★ 4.9</span></div>
+        </div>
+      </a>
+      <a class="product" href="product.html">
+        <div class="product__img" style="background:linear-gradient(135deg,#c8f7d4,#5fd98a)">🪴</div>
+        <div class="product__body">
+          <h3>Leaf 桌面绿植</h3>
+          <div class="product__meta"><span class="price">$24.00</span><span class="stars">★ 4.7</span></div>
+        </div>
+      </a>
+      <a class="product" href="product.html">
+        <div class="product__img" style="background:linear-gradient(135deg,#ffd1e8,#ff8fc4)">💡</div>
+        <div class="product__body">
+          <h3>Glow 氛围灯</h3>
+          <div class="product__meta"><span class="price">$32.00</span><span class="stars">★ 4.9</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 分类 ===== -->
+<section class="section section--alt" id="collection">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">按场景挑</span>
+      <h2>分类浏览</h2>
+    </div>
+    <div class="grid grid--3">
+      <a class="cat cat--a" href="product.html"><span>数码配件</span><small>12 件</small></a>
+      <a class="cat cat--b" href="product.html"><span>家居生活</span><small>18 件</small></a>
+      <a class="cat cat--c" href="product.html"><span>随身好物</span><small>9 件</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 邮件订阅 ===== -->
+<section class="newsletter">
+  <div class="container newsletter__inner">
+    <div>
+      <h2>订阅，抢先知道上新</h2>
+      <p>每月一封，只发好东西，不啰嗦。</p>
+    </div>
+    <form class="newsletter__form" onsubmit="return false;">
+      <input type="email" placeholder="你的邮箱" />
+      <button class="btn btn--primary" type="submit">订阅</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <a href="index.html" class="logo">JADE</a>
+      <p class="muted">简约好物独立站 · 演示作品，非真实商店</p>
+    </div>
+    <div class="footer__col">
+      <h4>购物</h4>
+      <a href="#featured">新品</a><a href="#collection">分类</a><a href="product.html">热卖</a>
+    </div>
+    <div class="footer__col">
+      <h4>帮助</h4>
+      <a href="#">配送</a><a href="#">退换</a><a href="#">联系我们</a>
+    </div>
+  </div>
+  <p class="footer__copy">© 2026 Jade Demo · 用于作品集展示</p>
+</footer>
+
+<!-- ===== 购物车抽屉 ===== -->
+<aside class="cart" id="cartDrawer">
+  <div class="cart__head">
+    <h3>购物车</h3>
+    <button class="cart__close" id="cartClose" aria-label="关闭">✕</button>
+  </div>
+  <div class="cart__items">
+    <div class="cart__item">
+      <div class="ci__img">🎧</div>
+      <div class="ci__info"><strong>Aura 无线耳机</strong><span>$59.00</span></div>
+      <span class="ci__qty">×1</span>
+    </div>
+    <div class="cart__item">
+      <div class="ci__img">💡</div>
+      <div class="ci__info"><strong>Glow 氛围灯</strong><span>$32.00</span></div>
+      <span class="ci__qty">×1</span>
+    </div>
+  </div>
+  <div class="cart__foot">
+    <div class="cart__total"><span>小计</span><strong>$91.00</strong></div>
+    <button class="btn btn--primary" style="width:100%">去结算</button>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>作品集 · 建站自由职业者 Portfolio</title>
+<meta name="description" content="WordPress / Shopify 建站作品集，用于 Freelancer 等平台展示。" />
+<style>
+:root{--bg:#0f1117;--card:#171a23;--ink:#eef0f6;--muted:#9aa0b0;--primary:#7c7cff;--radius:18px;--maxw:1000px;--font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+header{padding:64px 0 28px;text-align:center}
+.badge{display:inline-block;background:rgba(124,124,255,.15);color:var(--primary);font-weight:600;font-size:13px;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+h1{font-size:40px;letter-spacing:-1px}
+header p{color:var(--muted);margin-top:10px;font-size:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px}
+.card{background:var(--card);border:1px solid #23262f;border-radius:var(--radius);padding:28px;transition:transform .18s,box-shadow .18s}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.card .tag{font-size:13px;color:var(--primary);font-weight:600}
+.card h2{font-size:22px;margin:8px 0 10px}
+.card p{color:var(--muted);font-size:14.5px;margin-bottom:18px}
+.card a{color:var(--primary);font-weight:600;text-decoration:none}
+.foot{text-align:center;color:var(--muted);font-size:13px;margin:48px 0 36px}
+@media(max-width:680px){.grid{grid-template-columns:1fr}h1{font-size:32px}}
+</style>
+</head>
+<body>
+<header class="container">
+  <span class="badge">建站自由职业者 · 作品集</span>
+  <h1>你好，我是你的建站搭子 👋</h1>
+  <p>专注 WordPress 企业官网 与 Shopify 独立站搭建。下面是两个可点开的演示作品，欢迎查看。</p>
+</header>
+
+<main class="container grid">
+  <article class="card">
+    <span class="tag">WordPress · 企业官网</span>
+    <h2>Jade Studio</h2>
+    <p>响应式企业官网 demo：服务展示、关于、案例、客户评价与联系表单，含移动端菜单交互。</p>
+    <a href="wordpress-demo/index.html">▶ 打开演示</a>
+  </article>
+  <article class="card">
+    <span class="tag">Shopify · 独立站</span>
+    <h2>Jade 好物商店</h2>
+    <p>独立站 demo：首页精选商品、分类、商品详情页（颜色/数量选择、加购抽屉）全交互。</p>
+    <a href="shopify-demo/index.html">▶ 打开演示</a>
+  </article>
+</main>
+
+<p class="foot">本作品集为演示用途 · 部署至 GitHub Pages 后即可作为 Freelancer 作品集链接</p>
+</body>
+</html>
