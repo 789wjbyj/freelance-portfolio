@@ -26,14 +26,35 @@ python -m http.server 8080
 # 浏览器访问 http://localhost:8080
 ```
 
-## 部署到 GitHub Pages（拿一个可发链接的作品集）
-1. 在 GitHub 新建仓库，例如 `freelance-portfolio`。
-2. 把整个 `freelancer-portfolio/` 目录内容推上去。
-3. 仓库 Settings → Pages → Source 选 `main` 分支根目录 → Save。
-4. 几分钟后访问 `https://你的用户名.github.io/freelance-portfolio/`。
-5. 把这个链接 + 截图放进 Freelancer 的「Portfolio（作品集）」。
+## 部署到 GitHub Pages（一键可发的作品集）
 
-> 提示：部署前把站点里的 `Jade Studio` / `JADE` 文案、邮箱（现为 hello@jadestudio.demo）、社媒换成你自己的品牌信息。
+本地仓库已经初始化并提交好了（commit `bf4b178`）。你只需在 GitHub 上建仓库 + 推上去即可。
+
+### 第 1 步：GitHub 上建仓库
+1. 打开 https://github.com/new
+2. Repository name 填 `freelance-portfolio`，选 **Public**
+3. **不要**勾 Initialize with README，直接点 Create repository
+
+### 第 2 步：推送到 GitHub（在本机 `freelancer-portfolio/` 目录执行）
+```bash
+git remote add origin https://github.com/789wjbyj/freelance-portfolio.git
+git branch -M main
+git push -u origin main
+```
+> 若你配了 SSH key，可把 remote 换成 `git@github.com:789wjbyj/freelance-portfolio.git`。
+> 推送时会用你本机已存的 GitHub 凭证 / 浏览器登录，无需我代操作。
+
+### 第 3 步：开启 Pages
+1. 仓库 → Settings → Pages
+2. Source 选 **Deploy from a branch** → Branch 选 `main`、目录 `/ (root)` → Save
+3. 等 1–2 分钟，访问：
+   **https://789wjbyj.github.io/freelance-portfolio/**
+
+### 第 4 步：填进 Freelancer
+把上面这个链接 + 3–4 张站点截图（首页、案例、商品页、移动端）放进 Freelancer 的「Portfolio（作品集）」。
+
+> 部署前记得把站点里的 `Jade Studio` / `JADE` 文案、邮箱（现为 hello@jadestudio.demo）换成你自己的真实信息。
+> 用户名 `789wjbyj` 取自你的 GitHub 账号，若不同请全局替换。
 
 ## 在 Freelancer 上怎么用
 - **作品集**：放上面 GitHub Pages 链接，配 3–4 张站点截图（首页、案例、商品页、移动端）。
