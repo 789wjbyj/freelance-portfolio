@@ -53,8 +53,8 @@ git push -u origin main
 ### 第 4 步：填进 Freelancer
 把上面这个链接 + 3–4 张站点截图（首页、案例、商品页、移动端）放进 Freelancer 的「Portfolio（作品集）」。
 
-> 部署前记得把站点里的 `Jade Studio` / `JADE` 文案、邮箱（现为 hello@jadestudio.demo）换成你自己的真实信息。
-> 用户名 `789wjbyj` 取自你的 GitHub 账号，若不同请全局替换。
+> 站点已换皮为个人信息：品牌 Jade Studio / JADE（暗合"白玉京"），联系邮箱 3377955731@qq.com，署名 问剑白玉京。
+> 如需再改，全局替换即可。用户名 `789wjbyj` 取自 GitHub 账号，若不同请同步替换。
 
 ## 在 Freelancer 上怎么用
 - **作品集**：放上面 GitHub Pages 链接，配 3–4 张站点截图（首页、案例、商品页、移动端）。
