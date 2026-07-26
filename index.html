@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>作品集 · 建站自由职业者 Portfolio</title>
-<meta name="description" content="WordPress / Shopify 建站作品集，用于 Freelancer 等平台展示。" />
+<meta name="description" content="WordPress / Shopify / SaaS 落地页建站作品集，用于 Freelancer 等平台展示。" />
 <style>
 :root{--bg:#0f1117;--card:#171a23;--ink:#eef0f6;--muted:#9aa0b0;--primary:#7c7cff;--radius:18px;--maxw:1000px;--font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -14,7 +14,7 @@ header{padding:64px 0 28px;text-align:center}
 .badge{display:inline-block;background:rgba(124,124,255,.15);color:var(--primary);font-weight:600;font-size:13px;padding:6px 14px;border-radius:999px;margin-bottom:18px}
 h1{font-size:40px;letter-spacing:-1px}
 header p{color:var(--muted);margin-top:10px;font-size:16px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
 .card{background:var(--card);border:1px solid #23262f;border-radius:var(--radius);padding:28px;transition:transform .18s,box-shadow .18s}
 .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.4)}
 .card .tag{font-size:13px;color:var(--primary);font-weight:600}
@@ -22,6 +22,7 @@ header p{color:var(--muted);margin-top:10px;font-size:16px}
 .card p{color:var(--muted);font-size:14.5px;margin-bottom:18px}
 .card a{color:var(--primary);font-weight:600;text-decoration:none}
 .foot{text-align:center;color:var(--muted);font-size:13px;margin:48px 0 36px}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
 @media(max-width:680px){.grid{grid-template-columns:1fr}h1{font-size:32px}}
 </style>
 </head>
@@ -29,7 +30,7 @@ header p{color:var(--muted);margin-top:10px;font-size:16px}
 <header class="container">
   <span class="badge">建站自由职业者 · 作品集</span>
   <h1>你好，我是问剑白玉京 👋</h1>
-  <p>独立建站者 · 专注 WordPress 企业官网 与 Shopify 独立站搭建。下面是两个可点开的演示作品，欢迎查看。</p>
+  <p>独立建站者 · 专注 WordPress 企业官网、Shopify 独立站与 SaaS 产品落地页搭建。下面是三个可点开的演示作品，欢迎查看。</p>
 </header>
 
 <main class="container grid">
@@ -44,6 +45,12 @@ header p{color:var(--muted);margin-top:10px;font-size:16px}
     <h2>Jade 好物商店</h2>
     <p>独立站 demo：首页精选商品、分类、商品详情页（颜色/数量选择、加购抽屉）全交互。</p>
     <a href="shopify-demo/index.html">▶ 打开演示</a>
+  </article>
+  <article class="card">
+    <span class="tag">SaaS · 产品落地页</span>
+    <h2>Flowbase</h2>
+    <p>SaaS 落地页 demo：渐变 Hero、产品看板 mockup、定价月/年切换、FAQ 折叠、滚动动效，纯前端实现。</p>
+    <a href="landing-demo/index.html">▶ 打开演示</a>
   </article>
 </main>
 
